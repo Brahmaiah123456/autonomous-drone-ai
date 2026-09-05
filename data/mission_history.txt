@@ -1,0 +1,71 @@
+DRONE MISSION HISTORY
+
+Mission ID: M001
+Location: Solar Farm A
+Mission Type: Solar Panel Inspection
+Battery Start: 92%
+Battery End: 58%
+Weather: Clear
+GPS: Stable
+Finding: No significant anomaly
+Decision: Mission completed successfully
+
+
+Mission ID: M002
+Location: Solar Farm A
+Mission Type: Solar Panel Inspection
+Battery Start: 88%
+Battery End: 47%
+Weather: Clear
+GPS: Stable
+Finding: Possible thermal anomaly
+Anomaly Confidence: 86%
+Decision: Secondary inspection recommended
+Result: Damaged solar panel confirmed
+
+
+Mission ID: M003
+Location: Solar Farm B
+Mission Type: Solar Panel Inspection
+Battery Start: 79%
+Battery End: 31%
+Weather: Moderate wind
+GPS: Stable
+Finding: Possible surface damage
+Anomaly Confidence: 74%
+Decision: Human review required
+Result: Additional evidence requested
+
+
+Mission ID: M004
+Location: Solar Farm C
+Mission Type: Infrastructure Inspection
+Battery Start: 91%
+Battery End: 64%
+Weather: Clear
+GPS: Stable
+Finding: No anomaly
+Decision: Mission completed successfully
+
+
+Mission ID: M005
+Location: Solar Farm A
+Mission Type: Solar Panel Inspection
+Battery Start: 82%
+Battery End: 28%
+Weather: Clear
+GPS: Stable
+Finding: Possible thermal anomaly
+Anomaly Confidence: 91%
+Decision: Secondary inspection blocked
+Reason: Battery below minimum operating threshold
+Result: Drone returned to base
+
+
+MISSION HISTORY RULE
+
+Previous mission results may be used as supporting evidence.
+
+Historical mission results must not override current safety policies.
+
+Current battery, weather, GPS and safety conditions must always be checked before a new mission decision.

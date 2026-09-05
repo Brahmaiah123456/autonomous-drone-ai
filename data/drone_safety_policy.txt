@@ -1,0 +1,64 @@
+DRONE SAFETY POLICY
+
+Document ID: DSP-001
+Version: 1.0
+
+1. BATTERY SAFETY
+
+A drone must not begin a new mission if the battery level is below 30%.
+
+If the battery level falls below 20% during a mission, the drone must immediately initiate Return-to-Home (RTH).
+
+If the battery level falls below 10%, the mission must be aborted and the drone must perform an emergency landing when safe.
+
+2. WEATHER SAFETY
+
+A mission must not start when weather conditions are unsafe.
+
+The maximum permitted wind speed for normal operations is 30 km/h.
+
+If wind speed exceeds 30 km/h during a mission, the mission should be paused or the drone should return to a safe location.
+
+Drone operations must not continue during severe weather conditions such as thunderstorms.
+
+3. GPS SAFETY
+
+The drone requires a stable GPS signal for autonomous outdoor missions.
+
+If GPS signal is lost for more than 10 seconds, autonomous mission execution must be paused.
+
+The drone should attempt to restore GPS connectivity or initiate Return-to-Home.
+
+4. HUMAN APPROVAL
+
+Human approval is required before executing a high-risk mission action.
+
+High-risk actions include:
+- Flying into restricted areas
+- Continuing a mission with critical battery levels
+- Continuing operations during unsafe weather
+- Performing actions when the system confidence is below 70%
+
+5. EMERGENCY PROCEDURES
+
+If a critical safety condition is detected, the drone must stop the planned mission action.
+
+The system should prioritize:
+1. Human safety
+2. Drone safety
+3. Returning to a safe location
+4. Completing the mission
+
+6. ANOMALY DETECTION
+
+If an inspection system detects a possible infrastructure anomaly with confidence above 80%, a secondary inspection may be recommended.
+
+A secondary inspection must still pass all battery, weather, GPS and safety checks.
+
+7. DECISION POLICY
+
+The AI system must not make safety-critical decisions using generated knowledge alone.
+
+Safety decisions must be supported by the approved safety documentation.
+
+When required information cannot be found, the system must request human review rather than inventing a rule.

@@ -1,0 +1,90 @@
+DRONE OPERATIONS MANUAL
+
+Document ID: DOM-001
+Version: 1.0
+
+1. MISSION PLANNING
+
+Every autonomous drone mission must have a defined objective.
+
+Before starting a mission, the system should verify:
+- Battery level
+- GPS availability
+- Weather conditions
+- Mission location
+- Safety restrictions
+
+2. MISSION TYPES
+
+Supported mission types include:
+
+- Infrastructure inspection
+- Solar panel inspection
+- Visual surveillance
+- Mapping
+- Routine aerial inspection
+
+3. PRE-FLIGHT CHECK
+
+Before takeoff, the system must verify that:
+- Battery is at least 30%
+- GPS signal is available
+- Weather conditions are safe
+- The mission location is permitted
+- No critical system fault is present
+
+If any required check fails, the mission must not start.
+
+4. AUTONOMOUS FLIGHT
+
+During autonomous flight, the system should continuously monitor:
+- Battery level
+- GPS status
+- Weather conditions
+- Altitude
+- Mission progress
+- Sensor status
+
+If a critical condition occurs, the system should pause the mission or return to a safe location.
+
+5. RETURN-TO-HOME
+
+Return-to-Home (RTH) should be initiated when:
+- Battery reaches a critical level
+- GPS or communication conditions become unsafe
+- The operator requests a return
+- A serious system fault is detected
+
+6. INSPECTION MISSIONS
+
+During infrastructure inspections, the drone may capture images for analysis.
+
+The AI system can identify possible anomalies such as:
+- Surface damage
+- Cracks
+- Thermal abnormalities
+- Missing components
+- Unusual visual patterns
+
+Detected anomalies should be reviewed using the appropriate inspection procedure.
+
+7. SECONDARY INSPECTION
+
+A secondary inspection may be performed when an anomaly has sufficient confidence and mission safety conditions are satisfied.
+
+Before starting a secondary inspection, verify:
+- Battery is sufficient
+- Weather is safe
+- GPS is available
+- The inspection is permitted by the safety policy
+
+8. MISSION COMPLETION
+
+After completing a mission, the system should generate a mission report containing:
+- Mission ID
+- Mission objective
+- Start and end status
+- Battery information
+- Detected anomalies
+- Actions performed
+- Final decision

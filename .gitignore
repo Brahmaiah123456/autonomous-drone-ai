@@ -1,0 +1,8 @@
+venv/
+.env
+chroma_db/
+reports/
+data/mission_memory.json
+__pycache__/
+*.pyc
+.vscode/

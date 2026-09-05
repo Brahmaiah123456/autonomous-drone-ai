@@ -1,0 +1,85 @@
+INSPECTION PROCEDURES
+
+Document ID: IP-001
+Version: 1.0
+
+1. SOLAR PANEL INSPECTION
+
+The objective of a solar panel inspection is to identify visible or thermal abnormalities.
+
+The drone may capture RGB and thermal images during inspection.
+
+Possible abnormalities include:
+- Cracked panels
+- Broken panels
+- Discoloration
+- Hotspots
+- Missing components
+- Unusual thermal patterns
+
+2. ANOMALY CONFIDENCE
+
+The AI inspection system assigns a confidence score to detected anomalies.
+
+If anomaly confidence is below 70%, the result should be treated as uncertain and sent for human review.
+
+If anomaly confidence is between 70% and 80%, additional evidence should be collected before making a decision.
+
+If anomaly confidence is above 80%, a secondary inspection may be recommended.
+
+3. SECONDARY INSPECTION
+
+A secondary inspection provides additional evidence about a suspected anomaly.
+
+Before starting a secondary inspection, verify:
+
+- Battery level is at least 30%
+- GPS signal is available
+- Weather conditions are safe
+- The mission location is permitted
+- No critical drone fault is present
+
+4. THERMAL ANOMALY
+
+A thermal anomaly may indicate a possible equipment problem.
+
+The AI must not automatically conclude that equipment is damaged based only on a single image.
+
+The system should:
+1. Identify the possible anomaly.
+2. Retrieve the relevant inspection procedure.
+3. Check the confidence score.
+4. Request additional evidence when necessary.
+5. Recommend a secondary inspection when appropriate.
+
+5. HUMAN REVIEW
+
+Human review is required when:
+- Confidence is below 70%
+- Evidence is contradictory
+- Safety information is unavailable
+- A high-risk action is recommended
+- The system cannot find a relevant approved procedure
+
+6. INSPECTION REPORT
+
+The final inspection report should contain:
+
+- Mission ID
+- Inspection type
+- Location
+- Detected anomaly
+- Confidence score
+- Evidence used
+- Retrieved procedure
+- Risk level
+- Recommended action
+- Human approval status
+
+7. DECISION PRINCIPLE
+
+The system should prefer safe and explainable decisions.
+
+The AI should provide the evidence supporting its recommendation.
+
+If the required information cannot be retrieved from approved documents, the system should not invent information and should request human review.
